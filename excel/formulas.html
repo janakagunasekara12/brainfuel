@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Essential Excel Formulas for Beginners | BrainFuel</title>
+  <meta name="description" content="Learn the most important Excel formulas: SUM, AVERAGE, COUNT, IF, VLOOKUP and more. Step-by-step examples you can follow in your own spreadsheet." />
+  <meta name="keywords" content="excel formulas, excel SUM, excel AVERAGE, excel IF formula, VLOOKUP, excel functions, excel formula tutorial" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.brainfuel.online/excel/formulas.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Essential Excel Formulas for Beginners | BrainFuel" />
+  <meta property="og:description" content="Master Excel formulas with clear, practical examples." />
+  <meta property="og:url" content="https://www.brainfuel.online/excel/formulas.html" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org","@type":"Article",
+    "headline":"Essential Excel Formulas for Beginners",
+    "description":"A complete guide to the most useful Excel formulas",
+    "author":{"@type":"Organization","name":"BrainFuel"},
+    "publisher":{"@type":"Organization","name":"BrainFuel"},
+    "datePublished":"2024-01-01","dateModified":"2024-06-01",
+    "mainEntityOfPage":{"@type":"WebPage","@id":"https://www.brainfuel.online/excel/formulas.html"},
+    "breadcrumb":{"@type":"BreadcrumbList","itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://www.brainfuel.online/"},
+      {"@type":"ListItem","position":2,"name":"MS Excel","item":"https://www.brainfuel.online/excel/"},
+      {"@type":"ListItem","position":3,"name":"Excel Formulas","item":"https://www.brainfuel.online/excel/formulas.html"}
+    ]}
+  }
+  </script>
+</head>
+<body>
+<div id="reading-progress"></div>
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__logo"><img src="../Brainfuel%20Logo.png" alt="BrainFuel" class="nav__logo-img" /></a>
+    <div class="nav__links">
+      <a href="../index.html#categories" class="nav__link">Browse Topics</a>
+      <a href="../about.html" class="nav__link">About</a>
+    </div>
+    <div class="nav__actions">
+      <button class="search-box" data-search aria-label="Search"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>Search lessons…</button>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="../index.html#categories">Browse Topics</a>
+  <a href="../about.html">About</a>
+  <a href="../contact.html">Contact</a>
+</div>
+<div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true">
+  <div class="search-modal">
+    <input type="search" id="search-input" placeholder="Search for lessons, topics…" autocomplete="off" />
+    <div class="search-modal-results" id="search-results"></div>
+  </div>
+</div>
+
+<header class="article-header" aria-labelledby="article-title">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a><span class="sep">›</span>
+      <a href="index.html">MS Excel</a><span class="sep">›</span>
+      <span>Formulas</span>
+    </nav>
+    <div class="meta" style="margin-top:16px;">
+      <span class="badge badge-blue">MS Excel</span>
+      <span class="badge diff-beginner">Beginner</span>
+      <span class="badge badge-gray">Lesson 2 of 4</span>
+    </div>
+    <h1 id="article-title">Essential Excel Formulas</h1>
+    <p class="description">Unlock the real power of Excel. Learn the formulas that professionals use every day — explained clearly with examples you can follow.</p>
+    <div class="stats">
+      <span>⏱ 12 min read</span>
+      <span>📅 Updated 2024</span>
+      <span>👤 BrainFuel Team</span>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="article-layout">
+    <article class="article-content" aria-label="Article content">
+      <div class="article-body">
+
+        <h2 id="what-is-formula">What is a Formula?</h2>
+        <p>A formula in Excel is an instruction that tells Excel to <strong>calculate something</strong>. Every formula starts with an equals sign (<code>=</code>). When you type <code>=</code> in a cell, Excel knows you are writing a formula, not just text.</p>
+        <p>For example, typing <code>=2+2</code> in a cell will display <strong>4</strong>. Typing <code>=A1+B1</code> will add the values in cells A1 and B1 together.</p>
+
+        <div class="callout callout-note">
+          <span class="callout-icon">📌</span>
+          <div class="callout-body">
+            <strong>Golden rule of formulas</strong>
+            <p>Always start a formula with <code>=</code>. Without it, Excel treats your entry as plain text and will not calculate anything.</p>
+          </div>
+        </div>
+
+        <h2 id="basic-arithmetic">Basic Arithmetic</h2>
+        <p>Excel uses these symbols for arithmetic:</p>
+        <table>
+          <thead><tr><th>Symbol</th><th>Operation</th><th>Example</th><th>Result</th></tr></thead>
+          <tbody>
+            <tr><td><code>+</code></td><td>Addition</td><td><code>=10+5</code></td><td>15</td></tr>
+            <tr><td><code>-</code></td><td>Subtraction</td><td><code>=10-5</code></td><td>5</td></tr>
+            <tr><td><code>*</code></td><td>Multiplication</td><td><code>=10*5</code></td><td>50</td></tr>
+            <tr><td><code>/</code></td><td>Division</td><td><code>=10/5</code></td><td>2</td></tr>
+            <tr><td><code>^</code></td><td>Power (exponent)</td><td><code>=2^3</code></td><td>8</td></tr>
+          </tbody>
+        </table>
+        <p>You can also mix cell references: <code>=A1*B1</code> will multiply whatever numbers are in those cells.</p>
+
+        <h2 id="sum">SUM – Add Numbers Quickly</h2>
+        <p>The <code>SUM</code> function adds up a range of numbers. It is the most used function in all of Excel.</p>
+
+        <div class="formula-box">
+          <div class="label">Syntax</div>
+          <code>=SUM(number1, number2, …)</code>
+        </div>
+
+        <p><strong>Example:</strong> You have sales figures in cells B2 to B8. To get the total:</p>
+        <div class="formula-box">
+          <div class="label">Formula</div>
+          <code>=SUM(B2:B8)</code>
+        </div>
+
+        <p>The colon <code>:</code> means "from B2 to B8" — all cells in that range. You can also SUM individual cells: <code>=SUM(B2, B5, B9)</code></p>
+
+        <div class="callout callout-tip">
+          <span class="callout-icon">💡</span>
+          <div class="callout-body">
+            <strong>AutoSum shortcut</strong>
+            <p>Click on an empty cell below a column of numbers, then press <code>Alt + =</code>. Excel will automatically write a SUM formula for the numbers above — press Enter to confirm!</p>
+          </div>
+        </div>
+
+        <h2 id="average">AVERAGE – Find the Mean</h2>
+        <p>The <code>AVERAGE</code> function adds all numbers in a range and divides by how many there are.</p>
+        <div class="formula-box">
+          <div class="label">Syntax</div>
+          <code>=AVERAGE(range)</code>
+        </div>
+        <p><strong>Example:</strong> Average exam score for students in C2:C30:</p>
+        <div class="formula-box">
+          <div class="label">Formula</div>
+          <code>=AVERAGE(C2:C30)</code>
+        </div>
+
+        <h2 id="count">COUNT and COUNTA</h2>
+        <p><code>COUNT</code> counts how many cells in a range contain <strong>numbers</strong>. <code>COUNTA</code> counts cells that contain <strong>anything</strong> (numbers, text, dates).</p>
+        <div class="formula-box">
+          <div class="label">Count numbers only</div>
+          <code>=COUNT(A1:A100)</code>
+        </div>
+        <div class="formula-box">
+          <div class="label">Count all non-empty cells</div>
+          <code>=COUNTA(A1:A100)</code>
+        </div>
+
+        <h2 id="min-max">MIN and MAX</h2>
+        <p>Find the smallest or largest value in a range instantly.</p>
+        <div class="formula-box">
+          <div class="label">Lowest value</div>
+          <code>=MIN(D2:D50)</code>
+        </div>
+        <div class="formula-box">
+          <div class="label">Highest value</div>
+          <code>=MAX(D2:D50)</code>
+        </div>
+
+        <h2 id="if">IF – Make Decisions</h2>
+        <p>The <code>IF</code> function is one of the most powerful tools in Excel. It checks a condition and returns one value if the condition is true, and another if it is false.</p>
+        <div class="formula-box">
+          <div class="label">Syntax</div>
+          <code>=IF(condition, value_if_true, value_if_false)</code>
+        </div>
+
+        <p><strong>Example:</strong> You want to show "Pass" if a student's score (in cell C2) is 50 or above, and "Fail" if it is below 50:</p>
+        <div class="formula-box">
+          <div class="label">Formula</div>
+          <code>=IF(C2>=50, "Pass", "Fail")</code>
+        </div>
+
+        <div class="callout callout-note">
+          <span class="callout-icon">📌</span>
+          <div class="callout-body">
+            <strong>Text in formulas needs quotes</strong>
+            <p>When you want a formula to return text (like "Pass" or "Fail"), always wrap the text in double quotation marks. Numbers do not need quotes.</p>
+          </div>
+        </div>
+
+        <p>You can use comparison operators in the condition:</p>
+        <table>
+          <thead><tr><th>Operator</th><th>Meaning</th><th>Example</th></tr></thead>
+          <tbody>
+            <tr><td><code>=</code></td><td>Equal to</td><td><code>A1=100</code></td></tr>
+            <tr><td><code>&gt;</code></td><td>Greater than</td><td><code>A1&gt;50</code></td></tr>
+            <tr><td><code>&lt;</code></td><td>Less than</td><td><code>A1&lt;50</code></td></tr>
+            <tr><td><code>&gt;=</code></td><td>Greater or equal</td><td><code>A1&gt;=50</code></td></tr>
+            <tr><td><code>&lt;=</code></td><td>Less or equal</td><td><code>A1&lt;=50</code></td></tr>
+            <tr><td><code>&lt;&gt;</code></td><td>Not equal to</td><td><code>A1&lt;&gt;0</code></td></tr>
+          </tbody>
+        </table>
+
+        <h2 id="vlookup">VLOOKUP – Look Up Values</h2>
+        <p><code>VLOOKUP</code> searches a column for a value and returns something from the same row in another column. It is perfect for looking up a product price from a table, finding a student's grade, and much more.</p>
+        <div class="formula-box">
+          <div class="label">Syntax</div>
+          <code>=VLOOKUP(lookup_value, table_range, col_index, [FALSE])</code>
+        </div>
+
+        <p><strong>The four parts:</strong></p>
+        <div class="steps">
+          <div class="step">
+            <div class="step-body">
+              <strong>lookup_value</strong>
+              <p>What you are searching for. Example: a product name in cell A2.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-body">
+              <strong>table_range</strong>
+              <p>The table where data lives. Example: <code>E1:G100</code>. The first column of this range must contain the values you are searching for.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-body">
+              <strong>col_index</strong>
+              <p>Which column number (from the start of your table range) holds the answer you want. If the price is in the 3rd column of your table, enter 3.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-body">
+              <strong>[FALSE]</strong>
+              <p>Always type FALSE (or 0) here. This means Excel looks for an exact match. Without FALSE, you can get incorrect results.</p>
+            </div>
+          </div>
+        </div>
+
+        <p><strong>Example:</strong> You have a product list in columns E–G (Name, Category, Price). You want the price for the product named in A2:</p>
+        <div class="formula-box">
+          <div class="label">Formula</div>
+          <code>=VLOOKUP(A2, E:G, 3, FALSE)</code>
+        </div>
+
+        <div class="callout callout-tip">
+          <span class="callout-icon">💡</span>
+          <div class="callout-body">
+            <strong>Always use FALSE in VLOOKUP</strong>
+            <p>The last argument in VLOOKUP should almost always be <code>FALSE</code> (exact match). Using <code>TRUE</code> (approximate match) requires your data to be sorted and often gives unexpected results.</p>
+          </div>
+        </div>
+
+        <h2 id="copying-formulas">Copying Formulas Down a Column</h2>
+        <p>One of Excel's great features is that you can write a formula once and copy it to a whole column:</p>
+        <div class="steps">
+          <div class="step">
+            <div class="step-body">
+              <strong>Write your formula in the first row</strong>
+              <p>For example, type <code>=SUM(B2:D2)</code> in cell E2.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-body">
+              <strong>Select that cell</strong>
+              <p>Click on E2 to select it.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-body">
+              <strong>Copy the formula down</strong>
+              <p>Hover over the small square in the bottom-right corner of the cell (called the <em>fill handle</em>). When the cursor turns into a <strong>+</strong>, drag it down to copy the formula to as many rows as you need.</p>
+            </div>
+          </div>
+        </div>
+        <p>Excel will automatically adjust the row numbers for each row (B3:D3 for row 3, B4:D4 for row 4, and so on).</p>
+
+        <h2 id="summary">Summary</h2>
+        <p>You now know the core Excel formulas used by millions of professionals every day:</p>
+        <ul>
+          <li><strong>SUM</strong> – adds up numbers in a range</li>
+          <li><strong>AVERAGE</strong> – calculates the mean</li>
+          <li><strong>COUNT / COUNTA</strong> – counts cells</li>
+          <li><strong>MIN / MAX</strong> – finds smallest / largest value</li>
+          <li><strong>IF</strong> – makes decisions based on a condition</li>
+          <li><strong>VLOOKUP</strong> – looks up values in a table</li>
+        </ul>
+        <p>In the next lesson, you will learn how to turn your data into beautiful visual charts.</p>
+
+      </div>
+
+      <nav class="article-nav" aria-label="Lesson navigation">
+        <a href="basics.html">
+          <div class="article-nav__label">← Previous lesson</div>
+          <div class="article-nav__title">Excel Basics</div>
+        </a>
+        <a href="charts.html" class="next">
+          <div class="article-nav__label">Next lesson →</div>
+          <div class="article-nav__title">Creating Charts in Excel</div>
+        </a>
+      </nav>
+    </article>
+
+    <aside class="article-sidebar" aria-label="Sidebar">
+      <div class="toc-card">
+        <h3>In this lesson</h3>
+        <nav class="toc-list" aria-label="Table of contents">
+          <a href="#what-is-formula">What is a Formula?</a>
+          <a href="#basic-arithmetic">Basic Arithmetic</a>
+          <a href="#sum">SUM</a>
+          <a href="#average">AVERAGE</a>
+          <a href="#count">COUNT &amp; COUNTA</a>
+          <a href="#min-max">MIN &amp; MAX</a>
+          <a href="#if">IF</a>
+          <a href="#vlookup">VLOOKUP</a>
+          <a href="#copying-formulas">Copying Formulas</a>
+          <a href="#summary">Summary</a>
+        </nav>
+      </div>
+      <div class="sidebar-card">
+        <h3>All Excel Lessons</h3>
+        <nav class="related-list">
+          <a href="basics.html"><span>1️⃣</span>Excel Basics</a>
+          <a href="formulas.html" style="color:var(--primary);background:var(--primary-bg);"><span>2️⃣</span>Essential Formulas (here)</a>
+          <a href="charts.html"><span>3️⃣</span>Creating Charts</a>
+          <a href="pivot-tables.html"><span>4️⃣</span>Pivot Tables</a>
+        </nav>
+      </div>
+      <div class="sidebar-card">
+        <h3>Formula Quick Reference</h3>
+        <ul style="display:flex;flex-direction:column;gap:8px;font-size:.8rem;color:var(--text-muted);">
+          <li><code style="background:#f1f5f9;padding:1px 6px;border-radius:4px;">=SUM(A1:A10)</code></li>
+          <li><code style="background:#f1f5f9;padding:1px 6px;border-radius:4px;">=AVERAGE(A1:A10)</code></li>
+          <li><code style="background:#f1f5f9;padding:1px 6px;border-radius:4px;">=COUNT(A1:A10)</code></li>
+          <li><code style="background:#f1f5f9;padding:1px 6px;border-radius:4px;">=IF(A1>50,"Y","N")</code></li>
+          <li><code style="background:#f1f5f9;padding:1px 6px;border-radius:4px;">=VLOOKUP(A2,E:G,3,0)</code></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand"><a href="../index.html" class="logo"><img src="../Brainfuel%20Logo.png" alt="BrainFuel" class="footer-logo-img" /></a><p>Free, clear, practical knowledge for everyone.</p></div>
+      <div class="footer__col"><h4>Excel Lessons</h4><ul><li><a href="basics.html">Excel Basics</a></li><li><a href="formulas.html">Formulas</a></li><li><a href="charts.html">Charts</a></li><li><a href="pivot-tables.html">Pivot Tables</a></li></ul></div>
+      <div class="footer__col"><h4>Site</h4><ul><li><a href="../index.html">Home</a></li><li><a href="../about.html">About</a></li><li><a href="../contact.html">Contact</a></li></ul></div>
+      <div class="footer__col"><h4>Legal</h4><ul><li><a href="../privacy-policy.html">Privacy Policy</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul></div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2024 BrainFuel. All rights reserved.</p>
+      <div class="footer__bottom-links"><a href="../privacy-policy.html">Privacy Policy</a><a href="../contact.html">Contact</a></div>
+    </div>
+  </div>
+</footer>
+<button id="back-to-top" aria-label="Back to top">↑</button>
+<script src="../js/main.js"></script>
+</body>
+</html>

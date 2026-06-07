@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creating Charts in Excel – A Step-by-Step Guide | BrainFuel</title>
+  <meta name="description" content="Learn how to create bar charts, line graphs, and pie charts in Microsoft Excel. Turn your data into clear, professional visuals in minutes." />
+  <meta name="keywords" content="excel charts, create chart in excel, excel bar chart, excel pie chart, excel line chart, excel graphs tutorial" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.brainfuel.online/excel/charts.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Creating Charts in Excel – A Step-by-Step Guide | BrainFuel" />
+  <meta property="og:description" content="Turn your data into professional charts in Excel — step by step." />
+  <meta property="og:url" content="https://www.brainfuel.online/excel/charts.html" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Creating Charts in Excel","description":"Step-by-step guide to creating charts and graphs in Excel","author":{"@type":"Organization","name":"BrainFuel"},"publisher":{"@type":"Organization","name":"BrainFuel"},"datePublished":"2024-01-01","dateModified":"2024-06-01","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.brainfuel.online/excel/charts.html"},"breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.brainfuel.online/"},{"@type":"ListItem","position":2,"name":"MS Excel","item":"https://www.brainfuel.online/excel/"},{"@type":"ListItem","position":3,"name":"Charts","item":"https://www.brainfuel.online/excel/charts.html"}]}}
+  </script>
+</head>
+<body>
+<div id="reading-progress"></div>
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__logo"><img src="../Brainfuel%20Logo.png" alt="BrainFuel" class="nav__logo-img" /></a>
+    <div class="nav__links">
+      <a href="../index.html#categories" class="nav__link">Browse Topics</a>
+      <a href="../about.html" class="nav__link">About</a>
+    </div>
+    <div class="nav__actions">
+      <button class="search-box" data-search aria-label="Search"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>Search lessons…</button>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="../index.html#categories">Browse Topics</a>
+  <a href="../about.html">About</a>
+  <a href="../contact.html">Contact</a>
+</div>
+<div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true">
+  <div class="search-modal">
+    <input type="search" id="search-input" placeholder="Search for lessons, topics…" autocomplete="off" />
+    <div class="search-modal-results" id="search-results"></div>
+  </div>
+</div>
+
+<header class="article-header" aria-labelledby="article-title">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a><span class="sep">›</span><a href="index.html">MS Excel</a><span class="sep">›</span><span>Charts</span>
+    </nav>
+    <div class="meta" style="margin-top:16px;">
+      <span class="badge badge-blue">MS Excel</span>
+      <span class="badge diff-intermediate">Intermediate</span>
+      <span class="badge badge-gray">Lesson 3 of 4</span>
+    </div>
+    <h1 id="article-title">Creating Charts in Excel</h1>
+    <p class="description">Turn your raw data into clear, professional charts and graphs. Learn bar charts, line charts, and pie charts — step by step.</p>
+    <div class="stats"><span>⏱ 10 min read</span><span>📅 Updated 2024</span><span>👤 BrainFuel Team</span></div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="article-layout">
+    <article class="article-content" aria-label="Article content">
+      <div class="article-body">
+
+        <h2 id="why-charts">Why Use Charts?</h2>
+        <p>A chart (also called a graph) turns numbers into a <strong>visual picture</strong>. The human brain understands images far faster than rows of numbers. With a chart, you can:</p>
+        <ul>
+          <li>Spot trends at a glance (is sales going up or down?)</li>
+          <li>Compare values easily (which product sells most?)</li>
+          <li>Show proportions clearly (what share does each region have?)</li>
+          <li>Present data professionally in reports and presentations</li>
+        </ul>
+
+        <h2 id="chart-types">Choosing the Right Chart Type</h2>
+        <p>Excel offers many chart types. Here are the ones you will use most often:</p>
+        <table>
+          <thead><tr><th>Chart Type</th><th>Best Used For</th><th>Example</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Column / Bar Chart</strong></td><td>Comparing values across categories</td><td>Sales by product</td></tr>
+            <tr><td><strong>Line Chart</strong></td><td>Showing trends over time</td><td>Monthly revenue</td></tr>
+            <tr><td><strong>Pie Chart</strong></td><td>Showing parts of a whole (percentages)</td><td>Market share</td></tr>
+            <tr><td><strong>Area Chart</strong></td><td>Trends with volume emphasis</td><td>Website traffic over time</td></tr>
+            <tr><td><strong>Scatter Chart</strong></td><td>Showing relationships between two variables</td><td>Height vs. weight</td></tr>
+          </tbody>
+        </table>
+
+        <div class="callout callout-tip">
+          <span class="callout-icon">💡</span>
+          <div class="callout-body">
+            <strong>Tip: Use Recommended Charts</strong>
+            <p>Not sure which chart to use? Select your data, go to the <strong>Insert</strong> tab, and click <strong>Recommended Charts</strong>. Excel will suggest the best options based on your data.</p>
+          </div>
+        </div>
+
+        <h2 id="create-chart">Creating Your First Chart</h2>
+        <p>Let's say you have a simple table of monthly sales. Here is how to turn it into a column chart:</p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-body">
+              <strong>Prepare your data</strong>
+              <p>Make sure your data is clean and organised. Put your labels in the first column (or row) and your values next to them. For example:<br>Column A: Jan, Feb, Mar, Apr, May, Jun<br>Column B: 4500, 6200, 5800, 7100, 8400, 9200</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-body">
+              <strong>Select your data</strong>
+              <p>Click on the first cell of your data (e.g. A1), hold <code>Shift</code>, and click the last cell (e.g. B7). Both columns should now be highlighted in blue.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-body">
+              <strong>Go to the Insert tab</strong>
+              <p>Click the <strong>Insert</strong> tab at the top of the Excel window.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-body">
+              <strong>Choose your chart type</strong>
+              <p>In the <strong>Charts</strong> section of the ribbon, click the chart type you want. For a column chart, click the column chart icon (it looks like vertical bars). A dropdown will appear — pick the first option (Clustered Column).</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-body">
+              <strong>Your chart appears!</strong>
+              <p>Excel will instantly draw the chart on your sheet. You can drag it to a new position and resize it by dragging the corners.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="chart-title">Adding a Chart Title</h2>
+        <p>A chart without a title is confusing. Here is how to add or change the title:</p>
+        <ul>
+          <li>Click on the chart to select it</li>
+          <li>Click on the text that says <strong>"Chart Title"</strong> at the top of the chart</li>
+          <li>Delete the placeholder text and type your own title (e.g. "Monthly Sales 2024")</li>
+          <li>Click outside the title box when done</li>
+        </ul>
+
+        <h2 id="axis-labels">Adding Axis Labels</h2>
+        <p>Axis labels explain what the numbers on each axis represent (e.g. "Month" on the horizontal axis, "Sales (£)" on the vertical axis).</p>
+        <div class="steps">
+          <div class="step">
+            <div class="step-body">
+              <strong>Click the chart</strong>
+              <p>Select the chart so the Chart Tools appear in the ribbon.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-body">
+              <strong>Click the "+" button</strong>
+              <p>A small <strong>+</strong> icon appears to the right of the chart when selected. Click it to see Chart Elements.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-body">
+              <strong>Tick "Axis Titles"</strong>
+              <p>Check the box next to Axis Titles. Labels will appear on both axes — click each one to type your label.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="formatting">Formatting Your Chart</h2>
+        <p>Make your chart look polished with these formatting options:</p>
+
+        <h3 id="chart-styles">Change the Chart Style</h3>
+        <p>With the chart selected, click the <strong>paintbrush icon</strong> (Chart Styles) to the right of the chart. You can browse dozens of pre-designed colour styles and apply one with a single click.</p>
+
+        <h3 id="change-colours">Change Bar/Line Colours</h3>
+        <ul>
+          <li>Click on one of the bars (or the line) in the chart to select that data series</li>
+          <li>Right-click and choose <strong>Format Data Series</strong></li>
+          <li>Click the paint bucket icon and choose <strong>Solid Fill</strong></li>
+          <li>Pick any colour you like</li>
+        </ul>
+
+        <h3 id="data-labels">Adding Data Labels</h3>
+        <p>Data labels show the exact value on each bar or point, making your chart even clearer:</p>
+        <ul>
+          <li>Click the <strong>+</strong> button next to the chart</li>
+          <li>Tick <strong>Data Labels</strong></li>
+          <li>The values will now appear on top of each bar (or beside each point)</li>
+        </ul>
+
+        <div class="callout callout-note">
+          <span class="callout-icon">📌</span>
+          <div class="callout-body">
+            <strong>Pie chart tip: Show percentages</strong>
+            <p>For pie charts, right-click any slice and choose <strong>Format Data Labels</strong>. Tick <strong>Percentage</strong> and untick <strong>Value</strong> to show percentages instead of raw numbers.</p>
+          </div>
+        </div>
+
+        <h2 id="move-chart">Moving a Chart to its Own Sheet</h2>
+        <p>If your chart is getting in the way of your data, move it to a dedicated chart sheet:</p>
+        <ul>
+          <li>Right-click anywhere on the chart</li>
+          <li>Click <strong>Move Chart</strong></li>
+          <li>Select <strong>New sheet</strong> and give it a name</li>
+          <li>Click <strong>OK</strong></li>
+        </ul>
+        <p>The chart now has its own full-page tab, separate from your data.</p>
+
+        <h2 id="summary">Summary</h2>
+        <p>You can now create and customise charts in Excel! Remember:</p>
+        <ul>
+          <li>Choose the right chart type for your data (column for comparisons, line for trends, pie for proportions)</li>
+          <li>Select your data first, then insert the chart from the Insert tab</li>
+          <li>Always add a clear chart title and axis labels</li>
+          <li>Use data labels and chart styles to make your chart easier to read</li>
+          <li>Move the chart to its own sheet if it clutters your spreadsheet</li>
+        </ul>
+        <p>Up next: learn how Pivot Tables can summarise your data in seconds — no formulas needed.</p>
+
+      </div>
+      <nav class="article-nav" aria-label="Lesson navigation">
+        <a href="formulas.html"><div class="article-nav__label">← Previous lesson</div><div class="article-nav__title">Essential Excel Formulas</div></a>
+        <a href="pivot-tables.html" class="next"><div class="article-nav__label">Next lesson →</div><div class="article-nav__title">Excel Pivot Tables Guide</div></a>
+      </nav>
+    </article>
+
+    <aside class="article-sidebar" aria-label="Sidebar">
+      <div class="toc-card">
+        <h3>In this lesson</h3>
+        <nav class="toc-list" aria-label="Table of contents">
+          <a href="#why-charts">Why Use Charts?</a>
+          <a href="#chart-types">Chart Types</a>
+          <a href="#create-chart">Create Your First Chart</a>
+          <a href="#chart-title">Chart Title</a>
+          <a href="#axis-labels">Axis Labels</a>
+          <a href="#formatting">Formatting</a>
+          <a href="#move-chart">Moving a Chart</a>
+          <a href="#summary">Summary</a>
+        </nav>
+      </div>
+      <div class="sidebar-card">
+        <h3>All Excel Lessons</h3>
+        <nav class="related-list">
+          <a href="basics.html"><span>1️⃣</span>Excel Basics</a>
+          <a href="formulas.html"><span>2️⃣</span>Essential Formulas</a>
+          <a href="charts.html" style="color:var(--primary);background:var(--primary-bg);"><span>3️⃣</span>Creating Charts (here)</a>
+          <a href="pivot-tables.html"><span>4️⃣</span>Pivot Tables</a>
+        </nav>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand"><a href="../index.html" class="logo"><img src="../Brainfuel%20Logo.png" alt="BrainFuel" class="footer-logo-img" /></a><p>Free, clear, practical knowledge for everyone.</p></div>
+      <div class="footer__col"><h4>Excel Lessons</h4><ul><li><a href="basics.html">Excel Basics</a></li><li><a href="formulas.html">Formulas</a></li><li><a href="charts.html">Charts</a></li><li><a href="pivot-tables.html">Pivot Tables</a></li></ul></div>
+      <div class="footer__col"><h4>Site</h4><ul><li><a href="../index.html">Home</a></li><li><a href="../about.html">About</a></li><li><a href="../contact.html">Contact</a></li></ul></div>
+      <div class="footer__col"><h4>Legal</h4><ul><li><a href="../privacy-policy.html">Privacy Policy</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul></div>
+    </div>
+    <div class="footer__bottom"><p>&copy; 2024 BrainFuel. All rights reserved.</p><div class="footer__bottom-links"><a href="../privacy-policy.html">Privacy Policy</a><a href="../contact.html">Contact</a></div></div>
+  </div>
+</footer>
+<button id="back-to-top" aria-label="Back to top">↑</button>
+<script src="../js/main.js"></script>
+</body>
+</html>

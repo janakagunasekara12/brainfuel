@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BrainFuel – Free Knowledge for Everyone</title>
+  <meta name="description" content="BrainFuel offers free, easy-to-follow tutorials on MS Excel, productivity tools, and more. Learn at your own pace – from beginner to expert." />
+  <meta name="keywords" content="learn excel, excel tutorials, free tutorials, ms excel, spreadsheet, productivity, how to use excel" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.brainfuel.online/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="BrainFuel – Free Knowledge for Everyone" />
+  <meta property="og:description" content="Free, clear tutorials on Excel, productivity, and beyond." />
+  <meta property="og:url"         content="https://www.brainfuel.online/" />
+  <meta property="og:site_name"   content="BrainFuel" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="BrainFuel – Free Knowledge for Everyone" />
+  <meta name="twitter:description" content="Free, clear tutorials on Excel and more." />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Schema.org: WebSite + SearchAction -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "BrainFuel",
+    "url": "https://www.brainfuel.online",
+    "description": "Free knowledge and tutorials for everyone",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.brainfuel.online/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+<body>
+
+<div id="reading-progress"></div>
+
+<!-- NAVIGATION -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__logo">
+      <img src="Brainfuel%20Logo.png" alt="BrainFuel" class="nav__logo-img" />
+    </a>
+    <div class="nav__links">
+      <a href="#categories" class="nav__link">Browse Topics</a>
+      <a href="about.html"  class="nav__link">About</a>
+    </div>
+    <div class="nav__actions">
+      <button class="search-box" data-search aria-label="Search lessons">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        Search lessons…
+      </button>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#categories">Browse Topics</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- SEARCH OVERLAY -->
+<div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true" aria-label="Search">
+  <div class="search-modal">
+    <input type="search" id="search-input" placeholder="Search for lessons, topics…" autocomplete="off" />
+    <div class="search-modal-results" id="search-results"></div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="hero-shape hero-shape-1" aria-hidden="true"></div>
+  <div class="hero-shape hero-shape-2" aria-hidden="true"></div>
+  <div class="hero-shape hero-shape-3" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero__content">
+      <div class="hero__badge"><span class="pulse-dot"></span>Free for everyone, forever</div>
+      <h1 id="hero-heading">Feed Your Brain.<br><span>Learn Anything.</span></h1>
+      <p>Step-by-step lessons on real skills — Excel, maths, coding and more. Clear, free, built for all ages.</p>
+      <div class="hero__actions">
+        <a href="excel/index.html" class="btn btn-primary btn-lg">Start Learning Free →</a>
+        <a href="#categories"      class="btn btn-outline btn-lg">Browse Topics</a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero-stat">
+          <span class="hero-stat__num" data-count="4">0</span>
+          <span class="hero-stat__label">Live Lessons</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat__num" data-count="6">0</span>
+          <span class="hero-stat__label">Topics Planned</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat__num">100%</span>
+          <span class="hero-stat__label">Free Forever</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOPICS TICKER -->
+<div class="ticker-strip" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ticker-item">📊 MS Excel</span><span class="ticker-sep">⚡</span>
+    <span class="ticker-item">📝 MS Word</span><span class="ticker-sep">⚡</span>
+    <span class="ticker-item">📊 Google Sheets</span><span class="ticker-sep">⚡</span>
+    <span class="ticker-item">💻 Programming</span><span class="ticker-sep">⚡</span>
+    <span class="ticker-item">🧮 Mathematics</span><span class="ticker-sep">⚡</span>
+    <span class="ticker-item">🎨 Design Tools</span><span class="ticker-sep">⚡</span>
+    <span class="ticker-item">🔬 Science</span><span class="ticker-sep">⚡</span>
+    <span class="ticker-item">📈 Finance</span><span class="ticker-sep">⚡</span>
+    <span class="ticker-item">🌐 Web Skills</span><span class="ticker-sep">⚡</span>
+    <span class="ticker-item">📊 MS Excel</span><span class="ticker-sep">⚡</span>
+    <span class="ticker-item">📝 MS Word</span><span class="ticker-sep">⚡</span>
+    <span class="ticker-item">📊 Google Sheets</span><span class="ticker-sep">⚡</span>
+    <span class="ticker-item">💻 Programming</span><span class="ticker-sep">⚡</span>
+    <span class="ticker-item">🧮 Mathematics</span><span class="ticker-sep">⚡</span>
+    <span class="ticker-item">🎨 Design Tools</span><span class="ticker-sep">⚡</span>
+    <span class="ticker-item">🔬 Science</span><span class="ticker-sep">⚡</span>
+    <span class="ticker-item">📈 Finance</span><span class="ticker-sep">⚡</span>
+    <span class="ticker-item">🌐 Web Skills</span><span class="ticker-sep">⚡</span>
+  </div>
+</div>
+
+<!-- CATEGORIES -->
+<section class="section" id="categories" aria-labelledby="categories-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Explore topics</span>
+      <h2 id="categories-heading">What do you want to learn?</h2>
+      <p>Start with Excel — more topics are coming soon. Every lesson is free, clear, and practical.</p>
+    </div>
+    <div class="categories-grid">
+      <a href="excel/index.html" class="category-card">
+        <span class="category-card__icon cat-blue">📊</span>
+        <span class="category-card__name">MS Excel</span>
+        <span class="category-card__count">4 lessons</span>
+      </a>
+      <div class="category-card" style="opacity:.55;cursor:not-allowed;" title="Coming soon">
+        <span class="category-card__icon cat-green">📝</span>
+        <span class="category-card__name">MS Word</span>
+        <span class="category-card__count">Coming soon</span>
+      </div>
+      <div class="category-card" style="opacity:.55;cursor:not-allowed;" title="Coming soon">
+        <span class="category-card__icon cat-purple">📊</span>
+        <span class="category-card__name">Google Sheets</span>
+        <span class="category-card__count">Coming soon</span>
+      </div>
+      <div class="category-card" style="opacity:.55;cursor:not-allowed;" title="Coming soon">
+        <span class="category-card__icon cat-orange">💻</span>
+        <span class="category-card__name">Programming</span>
+        <span class="category-card__count">Coming soon</span>
+      </div>
+      <div class="category-card" style="opacity:.55;cursor:not-allowed;" title="Coming soon">
+        <span class="category-card__icon cat-teal">🧮</span>
+        <span class="category-card__name">Mathematics</span>
+        <span class="category-card__count">Coming soon</span>
+      </div>
+      <div class="category-card" style="opacity:.55;cursor:not-allowed;" title="Coming soon">
+        <span class="category-card__icon cat-pink">🎨</span>
+        <span class="category-card__name">Design Tools</span>
+        <span class="category-card__count">Coming soon</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED LESSONS -->
+<section class="section" style="background:var(--bg);" aria-labelledby="lessons-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Start here</span>
+      <h2 id="lessons-heading">Featured Excel Lessons</h2>
+      <p>Four complete lessons to take you from zero to confident in Microsoft Excel.</p>
+    </div>
+    <div class="articles-grid">
+
+      <article class="article-card">
+        <div class="article-card__thumb" style="background:#dbeafe;">📊</div>
+        <div class="article-card__body">
+          <div class="article-card__meta">
+            <span class="badge badge-blue">MS Excel</span>
+            <span class="badge diff-beginner">Beginner</span>
+          </div>
+          <h3 class="article-card__title"><a href="excel/basics.html">Excel Basics for Beginners</a></h3>
+          <p class="article-card__excerpt">Learn the Excel interface, how to enter data, navigate cells, and format your first spreadsheet.</p>
+          <div class="article-card__footer">
+            <span>⏱ 8 min read</span>
+            <a href="excel/basics.html" class="btn btn-ghost btn-sm">Read →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <div class="article-card__thumb" style="background:#d1fae5;">🧮</div>
+        <div class="article-card__body">
+          <div class="article-card__meta">
+            <span class="badge badge-blue">MS Excel</span>
+            <span class="badge diff-beginner">Beginner</span>
+          </div>
+          <h3 class="article-card__title"><a href="excel/formulas.html">Essential Excel Formulas</a></h3>
+          <p class="article-card__excerpt">Master SUM, AVERAGE, IF, VLOOKUP, and more. Includes real examples you can follow along.</p>
+          <div class="article-card__footer">
+            <span>⏱ 12 min read</span>
+            <a href="excel/formulas.html" class="btn btn-ghost btn-sm">Read →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <div class="article-card__thumb" style="background:#ede9fe;">📈</div>
+        <div class="article-card__body">
+          <div class="article-card__meta">
+            <span class="badge badge-blue">MS Excel</span>
+            <span class="badge diff-intermediate">Intermediate</span>
+          </div>
+          <h3 class="article-card__title"><a href="excel/charts.html">Creating Charts in Excel</a></h3>
+          <p class="article-card__excerpt">Turn raw numbers into beautiful bar, line, and pie charts that tell a story at a glance.</p>
+          <div class="article-card__footer">
+            <span>⏱ 10 min read</span>
+            <a href="excel/charts.html" class="btn btn-ghost btn-sm">Read →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="article-card">
+        <div class="article-card__thumb" style="background:#fce7f3;">🔄</div>
+        <div class="article-card__body">
+          <div class="article-card__meta">
+            <span class="badge badge-blue">MS Excel</span>
+            <span class="badge diff-intermediate">Intermediate</span>
+          </div>
+          <h3 class="article-card__title"><a href="excel/pivot-tables.html">Excel Pivot Tables Guide</a></h3>
+          <p class="article-card__excerpt">Discover how pivot tables let you summarise and analyse hundreds of rows in minutes, no formulas needed.</p>
+          <div class="article-card__footer">
+            <span>⏱ 11 min read</span>
+            <a href="excel/pivot-tables.html" class="btn btn-ghost btn-sm">Read →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div style="text-align:center;margin-top:36px;">
+      <a href="excel/index.html" class="btn btn-blue btn-lg">View All Excel Lessons →</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY BRAINFUEL -->
+<section class="section" id="features" aria-labelledby="features-heading">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">Why BrainFuel?</span>
+      <h2 id="features-heading">Learning, made simple</h2>
+      <p>We believe everyone deserves access to clear, quality knowledge — no cost, no barriers.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-card__icon">🆓</div>
+        <h3>100% Free</h3>
+        <p>Every lesson, every topic, every time. No subscriptions, no paywalls.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">👶</div>
+        <h3>All Ages Welcome</h3>
+        <p>Written in plain language that students, parents, and professionals all understand.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">📱</div>
+        <h3>Works on Any Device</h3>
+        <p>Read on your phone, tablet, or computer — everything is fully responsive.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">🔍</div>
+        <h3>SEO Optimised</h3>
+        <p>Find exactly what you need. Clear lessons that rank in search results.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="index.html" class="logo">
+          <img src="Brainfuel%20Logo.png" alt="BrainFuel" class="footer-logo-img" />
+        </a>
+        <p>Free, clear, practical knowledge for everyone — from students to professionals. Start learning today.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Topics</h4>
+        <ul>
+          <li><a href="excel/index.html">MS Excel</a></li>
+          <li><a href="#categories">All Categories</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Excel Lessons</h4>
+        <ul>
+          <li><a href="excel/basics.html">Excel Basics</a></li>
+          <li><a href="excel/formulas.html">Formulas</a></li>
+          <li><a href="excel/charts.html">Charts</a></li>
+          <li><a href="excel/pivot-tables.html">Pivot Tables</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="sitemap.xml">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2024 BrainFuel. All rights reserved.</p>
+      <div class="footer__bottom-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>

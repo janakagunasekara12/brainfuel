@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Excel Pivot Tables – A Beginner's Complete Guide | BrainFuel</title>
+  <meta name="description" content="Learn how to create and use Pivot Tables in Microsoft Excel. Summarise hundreds of rows of data in minutes — no formulas required." />
+  <meta name="keywords" content="excel pivot table, pivot table tutorial, create pivot table, excel pivot table for beginners, summarise data excel" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.brainfuel.online/excel/pivot-tables.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Excel Pivot Tables – A Beginner's Complete Guide | BrainFuel" />
+  <meta property="og:description" content="Create your first Pivot Table and analyse data in minutes." />
+  <meta property="og:url" content="https://www.brainfuel.online/excel/pivot-tables.html" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Excel Pivot Tables – A Beginner's Complete Guide","description":"Learn how to create and use Pivot Tables in Microsoft Excel","author":{"@type":"Organization","name":"BrainFuel"},"publisher":{"@type":"Organization","name":"BrainFuel"},"datePublished":"2024-01-01","dateModified":"2024-06-01","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.brainfuel.online/excel/pivot-tables.html"},"breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.brainfuel.online/"},{"@type":"ListItem","position":2,"name":"MS Excel","item":"https://www.brainfuel.online/excel/"},{"@type":"ListItem","position":3,"name":"Pivot Tables","item":"https://www.brainfuel.online/excel/pivot-tables.html"}]}}
+  </script>
+</head>
+<body>
+<div id="reading-progress"></div>
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__logo"><img src="../Brainfuel%20Logo.png" alt="BrainFuel" class="nav__logo-img" /></a>
+    <div class="nav__links">
+      <a href="../index.html#categories" class="nav__link">Browse Topics</a>
+      <a href="../about.html" class="nav__link">About</a>
+    </div>
+    <div class="nav__actions">
+      <button class="search-box" data-search aria-label="Search"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>Search lessons…</button>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="../index.html#categories">Browse Topics</a>
+  <a href="../about.html">About</a>
+  <a href="../contact.html">Contact</a>
+</div>
+<div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true">
+  <div class="search-modal">
+    <input type="search" id="search-input" placeholder="Search for lessons, topics…" autocomplete="off" />
+    <div class="search-modal-results" id="search-results"></div>
+  </div>
+</div>
+
+<header class="article-header" aria-labelledby="article-title">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a><span class="sep">›</span><a href="index.html">MS Excel</a><span class="sep">›</span><span>Pivot Tables</span>
+    </nav>
+    <div class="meta" style="margin-top:16px;">
+      <span class="badge badge-blue">MS Excel</span>
+      <span class="badge diff-intermediate">Intermediate</span>
+      <span class="badge badge-gray">Lesson 4 of 4</span>
+    </div>
+    <h1 id="article-title">Excel Pivot Tables Guide</h1>
+    <p class="description">Pivot Tables are Excel's most powerful feature for analysing data — and they are much easier than they look. No formulas needed.</p>
+    <div class="stats"><span>⏱ 11 min read</span><span>📅 Updated 2024</span><span>👤 BrainFuel Team</span></div>
+  </div>
+</header>
+
+<main class="container">
+  <div class="article-layout">
+    <article class="article-content" aria-label="Article content">
+      <div class="article-body">
+
+        <h2 id="what-is-pivot">What is a Pivot Table?</h2>
+        <p>A Pivot Table is a special tool that lets you <strong>instantly summarise large amounts of data</strong> by reorganising it in different ways — without changing your original data and without writing any formulas.</p>
+        <p>Imagine you have a spreadsheet with 1,000 rows of sales transactions. With a Pivot Table, you can answer questions like:</p>
+        <ul>
+          <li>What were total sales per region?</li>
+          <li>Which product sold the most?</li>
+          <li>How did each salesperson perform each month?</li>
+        </ul>
+        <p>And you can answer them all within seconds, just by dragging and dropping fields.</p>
+
+        <div class="callout callout-tip">
+          <span class="callout-icon">💡</span>
+          <div class="callout-body">
+            <strong>Why learn Pivot Tables?</strong>
+            <p>Pivot Tables are consistently listed as one of the top Excel skills employers want. If you can use Pivot Tables, you stand out in any office job.</p>
+          </div>
+        </div>
+
+        <h2 id="prepare-data">Before You Begin: Prepare Your Data</h2>
+        <p>Pivot Tables work best with data that is set up correctly. Follow these rules:</p>
+        <ul>
+          <li><strong>Headers in row 1:</strong> Every column must have a heading (e.g. Date, Product, Region, Sales)</li>
+          <li><strong>No empty rows or columns</strong> in the middle of your data</li>
+          <li><strong>No merged cells</strong> — each cell should contain only one value</li>
+          <li><strong>Consistent data types:</strong> All values in a column should be the same type (all numbers, or all dates, etc.)</li>
+        </ul>
+
+        <div class="callout callout-note">
+          <span class="callout-icon">📌</span>
+          <div class="callout-body">
+            <strong>Format as Table first</strong>
+            <p>Before creating a Pivot Table, select your data and press <code>Ctrl + T</code> to format it as a Table. This makes your Pivot Table automatically update when you add new rows — a huge time-saver.</p>
+          </div>
+        </div>
+
+        <h2 id="create-pivot">Creating Your First Pivot Table</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="step-body">
+              <strong>Select your data</strong>
+              <p>Click anywhere inside your data table. You do not need to select all of it — Excel will detect the data range automatically.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-body">
+              <strong>Open the Insert tab</strong>
+              <p>Click the <strong>Insert</strong> tab at the top of the screen.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-body">
+              <strong>Click PivotTable</strong>
+              <p>Click the <strong>PivotTable</strong> button on the left side of the ribbon. A dialog box will open.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-body">
+              <strong>Choose where to place it</strong>
+              <p>In the dialog box, you can put the Pivot Table on a <strong>New Worksheet</strong> (recommended — keeps things tidy) or on the existing sheet. Click <strong>OK</strong>.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-body">
+              <strong>The Pivot Table panel opens</strong>
+              <p>A blank Pivot Table area appears on the left, and the <strong>PivotTable Fields</strong> panel appears on the right. This is where you build your analysis.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="pivot-fields">Understanding the PivotTable Fields Panel</h2>
+        <p>The PivotTable Fields panel has two sections:</p>
+        <ul>
+          <li><strong>Field list (top):</strong> All the column headers from your data (e.g. Date, Product, Region, Sales)</li>
+          <li><strong>Four areas (bottom):</strong> Filters, Columns, Rows, and Values — these control how the table is laid out</li>
+        </ul>
+
+        <table>
+          <thead><tr><th>Area</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Rows</strong></td><td>Items listed down the left side of the table (e.g. products, regions)</td></tr>
+            <tr><td><strong>Columns</strong></td><td>Items spread across the top of the table (e.g. months, years)</td></tr>
+            <tr><td><strong>Values</strong></td><td>The numbers you want to calculate (e.g. SUM of Sales)</td></tr>
+            <tr><td><strong>Filters</strong></td><td>Adds a dropdown filter above the table to show/hide specific items</td></tr>
+          </tbody>
+        </table>
+
+        <h2 id="build-pivot">Building Your Analysis</h2>
+        <p><strong>Example:</strong> You want to see total sales by region. Here is how:</p>
+        <div class="steps">
+          <div class="step">
+            <div class="step-body">
+              <strong>Drag "Region" to the Rows area</strong>
+              <p>In the field list, find "Region" and drag it down to the <strong>Rows</strong> box. The Pivot Table will now list each region on the left side.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-body">
+              <strong>Drag "Sales" to the Values area</strong>
+              <p>Find "Sales" in the field list and drag it to the <strong>Values</strong> box. The table will instantly calculate the total sales for each region.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-body">
+              <strong>See your results</strong>
+              <p>The Pivot Table now shows the sum of sales for every region — built from all 1,000 rows of your raw data, in just two drag-and-drop moves!</p>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="change-calculation">Changing the Calculation Type</h2>
+        <p>By default, Excel uses <strong>SUM</strong> in the Values area. You can change it to COUNT, AVERAGE, MAX, MIN, and more:</p>
+        <ul>
+          <li>In the Values area of the field panel, click the dropdown arrow next to your value field</li>
+          <li>Click <strong>Value Field Settings</strong></li>
+          <li>Choose a different calculation type from the list</li>
+          <li>Click <strong>OK</strong></li>
+        </ul>
+
+        <h2 id="refresh">Refreshing When Data Changes</h2>
+        <p>If you add or change data in your original spreadsheet, the Pivot Table does <strong>not</strong> update automatically (unless you used a Table as your source). To refresh:</p>
+        <ul>
+          <li>Click anywhere inside the Pivot Table</li>
+          <li>Right-click and choose <strong>Refresh</strong></li>
+          <li>Or press <code>Alt + F5</code></li>
+        </ul>
+
+        <h2 id="pivot-chart">Adding a PivotChart</h2>
+        <p>You can create a chart directly from a Pivot Table — called a <strong>PivotChart</strong>. It updates automatically when you change the Pivot Table.</p>
+        <ul>
+          <li>Click anywhere in the Pivot Table</li>
+          <li>Go to <strong>Insert</strong> tab and click <strong>PivotChart</strong></li>
+          <li>Choose your chart type and click OK</li>
+          <li>The chart will appear and is linked to your Pivot Table data</li>
+        </ul>
+
+        <div class="callout callout-tip">
+          <span class="callout-icon">💡</span>
+          <div class="callout-body">
+            <strong>Add Slicers for interactive filtering</strong>
+            <p>With the Pivot Table selected, go to <strong>Insert &gt; Slicer</strong>. Choose a field (e.g. Region). A visual filter panel appears — click any region button to filter your entire Pivot Table instantly. Slicers are perfect for reports and dashboards.</p>
+          </div>
+        </div>
+
+        <h2 id="summary">Summary</h2>
+        <p>You have now completed all four Excel lessons! Here is what Pivot Tables can do:</p>
+        <ul>
+          <li>Summarise thousands of rows of data in seconds</li>
+          <li>Show totals, averages, counts — all without formulas</li>
+          <li>Slice and filter data interactively</li>
+          <li>Update automatically when linked to a Table</li>
+          <li>Generate PivotCharts for instant visuals</li>
+        </ul>
+
+        <div class="callout callout-tip">
+          <span class="callout-icon">🎉</span>
+          <div class="callout-body">
+            <strong>Congratulations!</strong>
+            <p>You have completed the entire MS Excel series on BrainFuel. You now know how to use Excel's interface, write key formulas, create charts, and build Pivot Tables — the skills used by professionals worldwide every day. More topics are coming soon!</p>
+          </div>
+        </div>
+
+      </div>
+      <nav class="article-nav" aria-label="Lesson navigation">
+        <a href="charts.html"><div class="article-nav__label">← Previous lesson</div><div class="article-nav__title">Creating Charts in Excel</div></a>
+        <a href="index.html" class="next"><div class="article-nav__label">Back to →</div><div class="article-nav__title">All Excel Lessons</div></a>
+      </nav>
+    </article>
+
+    <aside class="article-sidebar" aria-label="Sidebar">
+      <div class="toc-card">
+        <h3>In this lesson</h3>
+        <nav class="toc-list" aria-label="Table of contents">
+          <a href="#what-is-pivot">What is a Pivot Table?</a>
+          <a href="#prepare-data">Prepare Your Data</a>
+          <a href="#create-pivot">Create a Pivot Table</a>
+          <a href="#pivot-fields">PivotTable Fields</a>
+          <a href="#build-pivot">Build Your Analysis</a>
+          <a href="#change-calculation">Change Calculation</a>
+          <a href="#refresh">Refreshing Data</a>
+          <a href="#pivot-chart">PivotChart</a>
+          <a href="#summary">Summary</a>
+        </nav>
+      </div>
+      <div class="sidebar-card">
+        <h3>All Excel Lessons</h3>
+        <nav class="related-list">
+          <a href="basics.html"><span>1️⃣</span>Excel Basics</a>
+          <a href="formulas.html"><span>2️⃣</span>Essential Formulas</a>
+          <a href="charts.html"><span>3️⃣</span>Creating Charts</a>
+          <a href="pivot-tables.html" style="color:var(--primary);background:var(--primary-bg);"><span>4️⃣</span>Pivot Tables (here)</a>
+        </nav>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand"><a href="../index.html" class="logo"><img src="../Brainfuel%20Logo.png" alt="BrainFuel" class="footer-logo-img" /></a><p>Free, clear, practical knowledge for everyone.</p></div>
+      <div class="footer__col"><h4>Excel Lessons</h4><ul><li><a href="basics.html">Excel Basics</a></li><li><a href="formulas.html">Formulas</a></li><li><a href="charts.html">Charts</a></li><li><a href="pivot-tables.html">Pivot Tables</a></li></ul></div>
+      <div class="footer__col"><h4>Site</h4><ul><li><a href="../index.html">Home</a></li><li><a href="../about.html">About</a></li><li><a href="../contact.html">Contact</a></li></ul></div>
+      <div class="footer__col"><h4>Legal</h4><ul><li><a href="../privacy-policy.html">Privacy Policy</a></li><li><a href="../sitemap.xml">Sitemap</a></li></ul></div>
+    </div>
+    <div class="footer__bottom"><p>&copy; 2024 BrainFuel. All rights reserved.</p><div class="footer__bottom-links"><a href="../privacy-policy.html">Privacy Policy</a><a href="../contact.html">Contact</a></div></div>
+  </div>
+</footer>
+<button id="back-to-top" aria-label="Back to top">↑</button>
+<script src="../js/main.js"></script>
+</body>
+</html>
