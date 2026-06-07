@@ -156,5 +156,4 @@ git push
 
 ## Contact
 
-**Email:** gayathri@kapruka.com  
 **GitHub:** [github.com/janakagunasekara12](https://github.com/janakagunasekara12)
