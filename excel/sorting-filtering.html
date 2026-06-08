@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sorting and Filtering Data in Excel | BrainFuel</title>
+  <meta name="description" content="Learn how to sort and filter data in Microsoft Excel. Organise your spreadsheet instantly, find what you need fast, and make sense of large datasets." />
+  <meta name="keywords" content="excel sort data, excel filter, autofilter excel, sort A to Z excel, excel data filter tutorial, sort multiple columns excel" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.brainfuel.online/excel/sorting-filtering.html" />
+
+  <meta property="og:type"  content="article" />
+  <meta property="og:title" content="Sorting and Filtering Data in Excel | BrainFuel" />
+  <meta property="og:description" content="Learn how to sort and filter data in Excel with clear, step-by-step instructions." />
+  <meta property="og:url"   content="https://www.brainfuel.online/excel/sorting-filtering.html" />
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7D9854X2HX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7D9854X2HX');
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Sorting and Filtering Data in Excel",
+    "description": "A beginner-friendly guide to sorting and filtering data in Microsoft Excel",
+    "author": {"@type": "Organization", "name": "BrainFuel"},
+    "publisher": {"@type": "Organization", "name": "BrainFuel"},
+    "datePublished": "2025-06-08",
+    "dateModified": "2025-06-08",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.brainfuel.online/excel/sorting-filtering.html"},
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://www.brainfuel.online/"},
+        {"@type":"ListItem","position":2,"name":"MS Excel","item":"https://www.brainfuel.online/excel/"},
+        {"@type":"ListItem","position":3,"name":"Sorting & Filtering","item":"https://www.brainfuel.online/excel/sorting-filtering.html"}
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+
+<div id="reading-progress"></div>
+
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__logo"><img src="../Brainfuel%20Logo.png" alt="BrainFuel" class="nav__logo-img" style="height:44px;width:auto;" /></a>
+    <div class="nav__links">
+      <a href="../index.html#categories" class="nav__link">Browse Topics</a>
+      <a href="../news/index.html" class="nav__link">News</a>
+      <a href="../about.html" class="nav__link">About</a>
+    </div>
+    <div class="nav__actions">
+      <button class="search-box" data-search aria-label="Search lessons">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        Search lessons…
+      </button>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="../index.html#categories">Browse Topics</a>
+  <a href="../news/index.html">News</a>
+  <a href="../about.html">About</a>
+  <a href="../contact.html">Contact</a>
+</div>
+<div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true">
+  <div class="search-modal">
+    <input type="search" id="search-input" placeholder="Search for lessons, topics…" autocomplete="off" />
+    <div class="search-modal-results" id="search-results"></div>
+  </div>
+</div>
+
+<!-- ARTICLE HEADER -->
+<header class="article-header" aria-labelledby="article-title">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a>
+      <span class="sep">›</span>
+      <a href="index.html">MS Excel</a>
+      <span class="sep">›</span>
+      <span>Sorting &amp; Filtering</span>
+    </nav>
+    <div class="meta" style="margin-top:16px;">
+      <span class="badge badge-blue">MS Excel</span>
+      <span class="badge diff-beginner">Beginner</span>
+      <span class="badge badge-gray">Lesson 5 of 6</span>
+    </div>
+    <h1 id="article-title">Sorting and Filtering Data in Excel</h1>
+    <p class="description">Two of Excel's most useful everyday tools — sort your data into the right order and filter it to show only what you need, in seconds.</p>
+    <div class="stats">
+      <span>⏱ 9 min read</span>
+      <span>📅 Updated 2025</span>
+      <span>👤 BrainFuel Team</span>
+    </div>
+  </div>
+</header>
+
+<!-- ARTICLE BODY -->
+<main class="container">
+  <div class="article-layout">
+
+    <article class="article-content" aria-label="Article content">
+      <div class="article-body">
+
+        <h2 id="why-sort-filter">Why Sorting and Filtering Matter</h2>
+        <p>When your spreadsheet has dozens or hundreds of rows, finding the data you need can feel like searching for a needle in a haystack. <strong>Sorting</strong> and <strong>filtering</strong> are Excel's answer to that problem.</p>
+        <ul>
+          <li><strong>Sorting</strong> rearranges your data into a meaningful order — alphabetically, by number, by date, or by colour.</li>
+          <li><strong>Filtering</strong> hides rows you don't need so you can focus only on the data that matters right now.</li>
+        </ul>
+        <p>Neither tool changes or deletes your data — it simply changes how it is displayed. You can always undo a sort or clear a filter to get back to normal.</p>
+
+        <div class="callout callout-tip">
+          <span class="callout-icon">💡</span>
+          <div class="callout-body">
+            <strong>Did you know?</strong>
+            <p>Sorting and filtering are among the most-used Excel features in real workplaces. If you work with lists of customers, products, employees, or orders — you will use these every day.</p>
+          </div>
+        </div>
+
+        <h2 id="sorting">Sorting Data</h2>
+
+        <h3>Quick Sort (A to Z or Z to A)</h3>
+        <p>The fastest way to sort a single column:</p>
+        <div class="steps">
+          <div class="step">
+            <div class="step-body">
+              <strong>Click any cell in the column you want to sort</strong>
+              <p>For example, click any cell in a "Name" column to sort alphabetically, or any cell in a "Sales" column to sort by amount.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-body">
+              <strong>Go to the Data tab</strong>
+              <p>Click <strong>Data</strong> in the ribbon at the top of the screen.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-body">
+              <strong>Click A→Z or Z→A</strong>
+              <p><strong>A→Z</strong> sorts text alphabetically (A to Z) and numbers from smallest to largest. <strong>Z→A</strong> does the opposite — largest to smallest, Z to A.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout callout-note">
+          <span class="callout-icon">📌</span>
+          <div class="callout-body">
+            <strong>Important:</strong>
+            <p>When you sort, Excel moves the <em>entire row</em> — not just the column you clicked. So if row 3 has "Alice | Sales | £4,200", the whole row stays together when sorted. Your data will not get scrambled.</p>
+          </div>
+        </div>
+
+        <h3>Sorting by Multiple Columns</h3>
+        <p>Sometimes you need to sort by more than one column — for example, sort by Department first, then by Name within each department.</p>
+        <div class="steps">
+          <div class="step">
+            <div class="step-body">
+              <strong>Click anywhere in your data</strong>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-body">
+              <strong>Go to Data → Sort</strong>
+              <p>This opens the Sort dialogue box.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-body">
+              <strong>Set your first sort level</strong>
+              <p>Under "Sort by", choose your first column (e.g. Department) and the order (A to Z).</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-body">
+              <strong>Click "Add Level" and set the second sort</strong>
+              <p>Choose your second column (e.g. Name) and the order. Click OK.</p>
+            </div>
+          </div>
+        </div>
+
+        <h3>Sorting by Date</h3>
+        <p>Sorting dates works exactly the same way — click any cell in your date column, go to Data, and click A→Z (oldest to newest) or Z→A (newest to oldest). Excel recognises date values automatically.</p>
+
+        <h2 id="filtering">Filtering Data</h2>
+
+        <h3>Turning on AutoFilter</h3>
+        <p>AutoFilter adds dropdown arrows to your column headers, letting you filter your data instantly.</p>
+        <div class="steps">
+          <div class="step">
+            <div class="step-body">
+              <strong>Click anywhere in your data</strong>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-body">
+              <strong>Go to Data → Filter</strong>
+              <p>Small dropdown arrows appear on each column header. You can also press <code>Ctrl + Shift + L</code> as a shortcut.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-body">
+              <strong>Click a dropdown arrow to filter</strong>
+              <p>Click the arrow on any column header. A menu appears showing all the unique values in that column — tick or untick them to show or hide those rows.</p>
+            </div>
+          </div>
+        </div>
+
+        <h3>Filtering by a Specific Value</h3>
+        <p>For example, to show only rows where Region = "North":</p>
+        <ol>
+          <li>Click the dropdown arrow on the "Region" column header.</li>
+          <li>Untick "Select All" to deselect everything.</li>
+          <li>Tick "North" only.</li>
+          <li>Click OK. Excel hides all rows except those with "North" in the Region column.</li>
+        </ol>
+        <p>Notice that the row numbers on the left turn blue — this tells you a filter is active. Rows that are hidden still exist; they are just not shown.</p>
+
+        <h3>Filtering Numbers (Greater Than, Less Than)</h3>
+        <p>For number columns, Excel offers smarter filter options:</p>
+        <ol>
+          <li>Click the dropdown arrow on a number column (e.g. "Sales").</li>
+          <li>Hover over <strong>Number Filters</strong>.</li>
+          <li>Choose an option — Greater Than, Less Than, Between, Top 10, Above Average, etc.</li>
+          <li>Enter your value and click OK.</li>
+        </ol>
+
+        <h3>Filtering by Date</h3>
+        <p>Date columns get their own smart options under <strong>Date Filters</strong> — This Week, Last Month, This Quarter, Between specific dates, and more. Excel groups dates by year and month automatically in the filter dropdown.</p>
+
+        <h3>Using the Search Box in a Filter</h3>
+        <p>If your column has many unique values, type in the search box at the top of the filter dropdown to find what you need quickly. For example, type "Smith" to find all rows where the name contains "Smith".</p>
+
+        <div class="callout callout-tip">
+          <span class="callout-icon">💡</span>
+          <div class="callout-body">
+            <strong>Filter multiple columns at once</strong>
+            <p>You can apply filters to more than one column at the same time. For example, filter Region = "North" AND Product = "Widget A" — Excel shows only rows that match both conditions.</p>
+          </div>
+        </div>
+
+        <h2 id="clear-filter">Clearing a Filter</h2>
+        <p>To remove a filter from one column, click its dropdown arrow and choose <strong>Clear Filter From "[Column Name]"</strong>.</p>
+        <p>To remove all filters at once and show all your data again, go to <strong>Data → Clear</strong>. Your data is completely unchanged — all hidden rows come back.</p>
+        <p>To turn off AutoFilter completely (remove the dropdown arrows), press <code>Ctrl + Shift + L</code> again or go to Data → Filter.</p>
+
+        <h2 id="sort-filter-table">Sorting &amp; Filtering a Table</h2>
+        <p>If your data is formatted as an Excel Table (<code>Ctrl + T</code>), the sort and filter dropdowns are added <em>automatically</em>. Tables also keep the filter active even when you add new rows — which is why using a Table is highly recommended for any list you work with regularly.</p>
+
+        <div class="callout callout-note">
+          <span class="callout-icon">📌</span>
+          <div class="callout-body">
+            <strong>Quick recap</strong>
+            <p><strong>Sort</strong> — Data tab → A→Z or Z→A. Rearranges rows permanently (but you can undo with Ctrl+Z).<br><strong>Filter</strong> — Data tab → Filter (or Ctrl+Shift+L). Hides rows temporarily. Your data is always safe.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ARTICLE NAV -->
+      <nav class="article-nav" aria-label="Lesson navigation">
+        <a href="pivot-tables.html"><div class="article-nav__label">← Previous lesson</div><div class="article-nav__title">Excel Pivot Tables Guide</div></a>
+        <a href="conditional-formatting.html" class="next"><div class="article-nav__label">Next lesson →</div><div class="article-nav__title">Conditional Formatting</div></a>
+      </nav>
+
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside class="article-sidebar" aria-label="Sidebar">
+      <div class="sidebar-card">
+        <h3>In This Lesson</h3>
+        <ul style="display:flex;flex-direction:column;gap:8px;font-size:.875rem;">
+          <li><a href="#why-sort-filter" style="color:var(--text-muted);text-decoration:none;">Why it matters</a></li>
+          <li><a href="#sorting" style="color:var(--text-muted);text-decoration:none;">Sorting data</a></li>
+          <li><a href="#filtering" style="color:var(--text-muted);text-decoration:none;">Filtering data</a></li>
+          <li><a href="#clear-filter" style="color:var(--text-muted);text-decoration:none;">Clearing a filter</a></li>
+          <li><a href="#sort-filter-table" style="color:var(--text-muted);text-decoration:none;">Sorting &amp; filtering tables</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-card">
+        <h3>Key Shortcuts</h3>
+        <ul style="display:flex;flex-direction:column;gap:8px;font-size:.875rem;color:var(--text-muted);">
+          <li><code>Ctrl + Shift + L</code> — Toggle AutoFilter</li>
+          <li><code>Alt + ↓</code> — Open filter dropdown</li>
+          <li><code>Ctrl + Z</code> — Undo a sort</li>
+          <li><code>Ctrl + T</code> — Format as Table</li>
+        </ul>
+      </div>
+      <div class="sidebar-card">
+        <h3>All Excel Lessons</h3>
+        <ul style="display:flex;flex-direction:column;gap:8px;font-size:.875rem;">
+          <li><a href="basics.html" style="color:var(--text-muted);text-decoration:none;">1. Excel Basics</a></li>
+          <li><a href="formulas.html" style="color:var(--text-muted);text-decoration:none;">2. Formulas</a></li>
+          <li><a href="charts.html" style="color:var(--text-muted);text-decoration:none;">3. Charts</a></li>
+          <li><a href="pivot-tables.html" style="color:var(--text-muted);text-decoration:none;">4. Pivot Tables</a></li>
+          <li><a href="sorting-filtering.html" style="color:var(--primary);font-weight:600;text-decoration:none;">5. Sorting &amp; Filtering</a></li>
+          <li><a href="conditional-formatting.html" style="color:var(--text-muted);text-decoration:none;">6. Conditional Formatting</a></li>
+        </ul>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="../index.html" class="logo"><img src="../Brainfuel%20Logo.png" alt="BrainFuel" class="footer-logo-img" /></a>
+        <p>Free, clear, practical knowledge for everyone.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Excel Lessons</h4>
+        <ul>
+          <li><a href="basics.html">Excel Basics</a></li>
+          <li><a href="formulas.html">Formulas</a></li>
+          <li><a href="charts.html">Charts</a></li>
+          <li><a href="pivot-tables.html">Pivot Tables</a></li>
+          <li><a href="sorting-filtering.html">Sorting &amp; Filtering</a></li>
+          <li><a href="conditional-formatting.html">Conditional Formatting</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../news/index.html">Tech News</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2025 BrainFuel. All rights reserved.</p>
+      <div class="footer__bottom-links">
+        <a href="../privacy-policy.html">Privacy Policy</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top">↑</button>
+<script src="../js/main.js"></script>
+</body>
+</html>

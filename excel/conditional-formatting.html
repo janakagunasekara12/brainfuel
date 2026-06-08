@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Excel Conditional Formatting – A Complete Guide | BrainFuel</title>
+  <meta name="description" content="Learn how to use Conditional Formatting in Excel to automatically highlight cells, spot trends, and make your data visually clear — no formulas needed." />
+  <meta name="keywords" content="excel conditional formatting, highlight cells excel, color scale excel, data bars excel, excel conditional formatting tutorial, excel rules" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.brainfuel.online/excel/conditional-formatting.html" />
+
+  <meta property="og:type"  content="article" />
+  <meta property="og:title" content="Excel Conditional Formatting – A Complete Guide | BrainFuel" />
+  <meta property="og:description" content="Automatically colour and highlight cells in Excel based on their values — no formulas needed." />
+  <meta property="og:url"   content="https://www.brainfuel.online/excel/conditional-formatting.html" />
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7D9854X2HX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7D9854X2HX');
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Excel Conditional Formatting – A Complete Guide",
+    "description": "Learn how to use Conditional Formatting in Excel to highlight data automatically",
+    "author": {"@type": "Organization", "name": "BrainFuel"},
+    "publisher": {"@type": "Organization", "name": "BrainFuel"},
+    "datePublished": "2025-06-08",
+    "dateModified": "2025-06-08",
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.brainfuel.online/excel/conditional-formatting.html"},
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://www.brainfuel.online/"},
+        {"@type":"ListItem","position":2,"name":"MS Excel","item":"https://www.brainfuel.online/excel/"},
+        {"@type":"ListItem","position":3,"name":"Conditional Formatting","item":"https://www.brainfuel.online/excel/conditional-formatting.html"}
+      ]
+    }
+  }
+  </script>
+</head>
+<body>
+
+<div id="reading-progress"></div>
+
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav__inner">
+    <a href="../index.html" class="nav__logo"><img src="../Brainfuel%20Logo.png" alt="BrainFuel" class="nav__logo-img" style="height:44px;width:auto;" /></a>
+    <div class="nav__links">
+      <a href="../index.html#categories" class="nav__link">Browse Topics</a>
+      <a href="../news/index.html" class="nav__link">News</a>
+      <a href="../about.html" class="nav__link">About</a>
+    </div>
+    <div class="nav__actions">
+      <button class="search-box" data-search aria-label="Search lessons">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        Search lessons…
+      </button>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="../index.html#categories">Browse Topics</a>
+  <a href="../news/index.html">News</a>
+  <a href="../about.html">About</a>
+  <a href="../contact.html">Contact</a>
+</div>
+<div class="search-overlay" id="search-overlay" role="dialog" aria-modal="true">
+  <div class="search-modal">
+    <input type="search" id="search-input" placeholder="Search for lessons, topics…" autocomplete="off" />
+    <div class="search-modal-results" id="search-results"></div>
+  </div>
+</div>
+
+<!-- ARTICLE HEADER -->
+<header class="article-header" aria-labelledby="article-title">
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a>
+      <span class="sep">›</span>
+      <a href="index.html">MS Excel</a>
+      <span class="sep">›</span>
+      <span>Conditional Formatting</span>
+    </nav>
+    <div class="meta" style="margin-top:16px;">
+      <span class="badge badge-blue">MS Excel</span>
+      <span class="badge diff-intermediate">Intermediate</span>
+      <span class="badge badge-gray">Lesson 6 of 6</span>
+    </div>
+    <h1 id="article-title">Excel Conditional Formatting</h1>
+    <p class="description">Make your spreadsheet do the visual work for you — automatically highlight cells, spot high and low values, and make patterns jump out of your data.</p>
+    <div class="stats">
+      <span>⏱ 10 min read</span>
+      <span>📅 Updated 2025</span>
+      <span>👤 BrainFuel Team</span>
+    </div>
+  </div>
+</header>
+
+<!-- ARTICLE BODY -->
+<main class="container">
+  <div class="article-layout">
+
+    <article class="article-content" aria-label="Article content">
+      <div class="article-body">
+
+        <h2 id="what-is-cf">What is Conditional Formatting?</h2>
+        <p><strong>Conditional Formatting</strong> automatically changes the appearance of a cell — its colour, font, or border — based on the value inside it. You set a rule, and Excel applies the formatting for you, instantly, even as your data changes.</p>
+        <p>For example, you could tell Excel: <em>"Highlight any sales figure below £1,000 in red"</em> or <em>"Colour the top 10% of scores in green."</em> Excel does this automatically for every cell in your range.</p>
+
+        <div class="callout callout-tip">
+          <span class="callout-icon">💡</span>
+          <div class="callout-body">
+            <strong>Why use it?</strong>
+            <p>Conditional Formatting turns a plain table of numbers into a visual dashboard — you can spot problems, outliers, and trends at a glance without reading every cell. It is one of the fastest ways to make a spreadsheet look professional and easy to understand.</p>
+          </div>
+        </div>
+
+        <h2 id="highlight-cells">Highlight Cells Rules</h2>
+        <p>The most common use — highlight cells that meet a condition you choose.</p>
+        <div class="steps">
+          <div class="step">
+            <div class="step-body">
+              <strong>Select the cells you want to format</strong>
+              <p>Click and drag to select the range (e.g. B2:B20 for a column of sales figures).</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-body">
+              <strong>Go to Home → Conditional Formatting → Highlight Cells Rules</strong>
+              <p>You will see a submenu with options like Greater Than, Less Than, Between, Equal To, Text that Contains, and Duplicate Values.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-body">
+              <strong>Choose your condition and set the value</strong>
+              <p>For example, click <strong>Greater Than</strong>, type 5000, and choose a colour (e.g. Green Fill). Click OK.</p>
+            </div>
+          </div>
+        </div>
+        <p>Excel immediately highlights every cell in your selection that is greater than 5000 in green. If you change a value later, the formatting updates automatically.</p>
+
+        <h3>Useful Highlight Rules</h3>
+        <table>
+          <thead>
+            <tr><th>Rule</th><th>What it does</th><th>Good for</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Greater Than</strong></td><td>Highlights cells above a number</td><td>High sales, above target</td></tr>
+            <tr><td><strong>Less Than</strong></td><td>Highlights cells below a number</td><td>Low stock, below target</td></tr>
+            <tr><td><strong>Between</strong></td><td>Highlights cells in a range</td><td>Acceptable range values</td></tr>
+            <tr><td><strong>Equal To</strong></td><td>Highlights exact matches</td><td>Specific status values</td></tr>
+            <tr><td><strong>Text that Contains</strong></td><td>Highlights cells with specific text</td><td>Finding keywords in a list</td></tr>
+            <tr><td><strong>Duplicate Values</strong></td><td>Highlights repeated entries</td><td>Spotting duplicates in a list</td></tr>
+          </tbody>
+        </table>
+
+        <h2 id="top-bottom">Top/Bottom Rules</h2>
+        <p>Quickly highlight the best or worst performers in your data:</p>
+        <ul>
+          <li><strong>Top 10 Items</strong> — highlights the 10 highest values (you can change it to any number)</li>
+          <li><strong>Bottom 10 Items</strong> — highlights the 10 lowest values</li>
+          <li><strong>Top 10%</strong> — highlights the top percentage of values</li>
+          <li><strong>Above Average</strong> — highlights cells above the average of the selected range</li>
+          <li><strong>Below Average</strong> — highlights cells below the average</li>
+        </ul>
+        <p>To use these: <strong>Home → Conditional Formatting → Top/Bottom Rules</strong> → choose your option.</p>
+
+        <div class="callout callout-note">
+          <span class="callout-icon">📌</span>
+          <div class="callout-body">
+            <strong>Tip:</strong>
+            <p>"Top 10 Items" does not mean the top 10 — it means the top N items, and you can change N to any number in the dialog box. So "Top 3 Items" would highlight only the three highest values.</p>
+          </div>
+        </div>
+
+        <h2 id="data-bars">Data Bars</h2>
+        <p>Data Bars add a coloured bar inside each cell, like a mini bar chart — longer bars for bigger values, shorter bars for smaller values. It gives you an instant visual comparison across a column of numbers.</p>
+        <p>To apply: <strong>Home → Conditional Formatting → Data Bars</strong> → pick a colour. Done.</p>
+        <p>This is particularly effective for comparing things like monthly revenue, product quantities, or test scores across many rows.</p>
+
+        <h2 id="color-scales">Colour Scales</h2>
+        <p>Colour Scales apply a gradient of colours across your cells — for example, red for low values fading through yellow to green for high values. It is like a heat map.</p>
+        <p>To apply: <strong>Home → Conditional Formatting → Colour Scales</strong> → pick a scale. The most popular is the Red–Yellow–Green scale, which makes it immediately obvious which values are good and which need attention.</p>
+
+        <h2 id="icon-sets">Icon Sets</h2>
+        <p>Icon Sets add small visual symbols to cells — arrows, traffic lights, stars, or flags — based on the value. For example, a green up arrow for high values, yellow dash for middle values, and red down arrow for low values.</p>
+        <p>To apply: <strong>Home → Conditional Formatting → Icon Sets</strong> → choose a set.</p>
+
+        <div class="callout callout-tip">
+          <span class="callout-icon">💡</span>
+          <div class="callout-body">
+            <strong>Which one should you use?</strong>
+            <p>Use <strong>Highlight Cells Rules</strong> when you need to find specific values. Use <strong>Colour Scales</strong> or <strong>Data Bars</strong> when you want to visually compare an entire column of numbers at once. Use <strong>Icon Sets</strong> for dashboards and reports where traffic-light style indicators communicate status instantly.</p>
+          </div>
+        </div>
+
+        <h2 id="manage-rules">Managing and Removing Rules</h2>
+        <p>If you have applied multiple rules or want to edit or delete them:</p>
+        <div class="steps">
+          <div class="step">
+            <div class="step-body">
+              <strong>Go to Home → Conditional Formatting → Manage Rules</strong>
+              <p>This opens a window showing all the rules applied to your selection or the entire sheet.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-body">
+              <strong>Select a rule and click Edit Rule or Delete Rule</strong>
+              <p>You can change the condition, the formatting colour, or the range of cells the rule applies to.</p>
+            </div>
+          </div>
+        </div>
+
+        <h3>Clearing All Rules</h3>
+        <p>To remove all Conditional Formatting from selected cells: <strong>Home → Conditional Formatting → Clear Rules → Clear Rules from Selected Cells</strong>.</p>
+        <p>To remove all rules from the entire sheet: choose <strong>Clear Rules from Entire Sheet</strong>.</p>
+
+        <div class="callout callout-note">
+          <span class="callout-icon">📌</span>
+          <div class="callout-body">
+            <strong>Remember:</strong>
+            <p>Conditional Formatting only changes how a cell <em>looks</em> — it never changes the value inside. Removing it simply returns the cell to its original appearance. Nothing is lost.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ARTICLE NAV -->
+      <nav class="article-nav" aria-label="Lesson navigation">
+        <a href="sorting-filtering.html"><div class="article-nav__label">← Previous lesson</div><div class="article-nav__title">Sorting &amp; Filtering</div></a>
+        <a href="index.html" class="next"><div class="article-nav__label">Back to →</div><div class="article-nav__title">All Excel Lessons</div></a>
+      </nav>
+
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside class="article-sidebar" aria-label="Sidebar">
+      <div class="sidebar-card">
+        <h3>In This Lesson</h3>
+        <ul style="display:flex;flex-direction:column;gap:8px;font-size:.875rem;">
+          <li><a href="#what-is-cf" style="color:var(--text-muted);text-decoration:none;">What is it?</a></li>
+          <li><a href="#highlight-cells" style="color:var(--text-muted);text-decoration:none;">Highlight Cells Rules</a></li>
+          <li><a href="#top-bottom" style="color:var(--text-muted);text-decoration:none;">Top/Bottom Rules</a></li>
+          <li><a href="#data-bars" style="color:var(--text-muted);text-decoration:none;">Data Bars</a></li>
+          <li><a href="#color-scales" style="color:var(--text-muted);text-decoration:none;">Colour Scales</a></li>
+          <li><a href="#icon-sets" style="color:var(--text-muted);text-decoration:none;">Icon Sets</a></li>
+          <li><a href="#manage-rules" style="color:var(--text-muted);text-decoration:none;">Managing Rules</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-card">
+        <h3>Quick Path</h3>
+        <ul style="display:flex;flex-direction:column;gap:8px;font-size:.875rem;color:var(--text-muted);">
+          <li>Home tab → Conditional Formatting</li>
+          <li>Select cells first, then apply rule</li>
+          <li>Manage Rules to edit or delete</li>
+        </ul>
+      </div>
+      <div class="sidebar-card">
+        <h3>All Excel Lessons</h3>
+        <ul style="display:flex;flex-direction:column;gap:8px;font-size:.875rem;">
+          <li><a href="basics.html" style="color:var(--text-muted);text-decoration:none;">1. Excel Basics</a></li>
+          <li><a href="formulas.html" style="color:var(--text-muted);text-decoration:none;">2. Formulas</a></li>
+          <li><a href="charts.html" style="color:var(--text-muted);text-decoration:none;">3. Charts</a></li>
+          <li><a href="pivot-tables.html" style="color:var(--text-muted);text-decoration:none;">4. Pivot Tables</a></li>
+          <li><a href="sorting-filtering.html" style="color:var(--text-muted);text-decoration:none;">5. Sorting &amp; Filtering</a></li>
+          <li><a href="conditional-formatting.html" style="color:var(--primary);font-weight:600;text-decoration:none;">6. Conditional Formatting</a></li>
+        </ul>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a href="../index.html" class="logo"><img src="../Brainfuel%20Logo.png" alt="BrainFuel" class="footer-logo-img" /></a>
+        <p>Free, clear, practical knowledge for everyone.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Excel Lessons</h4>
+        <ul>
+          <li><a href="basics.html">Excel Basics</a></li>
+          <li><a href="formulas.html">Formulas</a></li>
+          <li><a href="charts.html">Charts</a></li>
+          <li><a href="pivot-tables.html">Pivot Tables</a></li>
+          <li><a href="sorting-filtering.html">Sorting &amp; Filtering</a></li>
+          <li><a href="conditional-formatting.html">Conditional Formatting</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../news/index.html">Tech News</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2025 BrainFuel. All rights reserved.</p>
+      <div class="footer__bottom-links">
+        <a href="../privacy-policy.html">Privacy Policy</a>
+        <a href="../contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top">↑</button>
+<script src="../js/main.js"></script>
+</body>
+</html>
