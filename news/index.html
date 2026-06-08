@@ -15,7 +15,6 @@
   <meta property="og:url"         content="https://www.brainfuel.online/news/" />
 
   <link rel="stylesheet" href="../css/style.css" />
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7D9854X2HX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -104,7 +103,7 @@
     <!-- FILTERS -->
     <div class="news-filters" role="group" aria-label="Filter by category">
       <button class="news-filter-btn active" data-filter="all">All Topics</button>
-      <button class="news-filter-btn" data-filter="ai">🤖 Artificial Intelligence</button>
+      <button class="news-filter-btn" data-filter="ai">🤖 AI</button>
       <button class="news-filter-btn" data-filter="smartphones">📱 Smartphones</button>
       <button class="news-filter-btn" data-filter="social">💬 Social Media</button>
       <button class="news-filter-btn" data-filter="security">🔒 Cybersecurity</button>
@@ -112,100 +111,110 @@
       <button class="news-filter-btn" data-filter="trends">🌐 Tech Trends</button>
     </div>
 
-    <!-- NEWS GRID -->
-    <div class="news-grid" id="news-grid">
-
-      <a href="ai-changing-everything.html" class="news-card" data-category="ai">
-        <div class="news-card__thumb" style="background:#ede9fe;">🤖</div>
-        <div class="news-card__body">
-          <div class="news-card__meta">
-            <span class="badge badge-purple">AI</span>
+    <!-- FEATURED STORY -->
+    <div id="featured-wrap">
+      <div class="news-section-label">Featured Story</div>
+      <a href="ai-changing-everything.html" class="news-featured" data-category="ai">
+        <div class="news-featured__thumb" style="background:linear-gradient(135deg,#ede9fe,#ddd6fe);">🤖</div>
+        <div class="news-featured__body">
+          <div class="news-featured__label">Top Pick</div>
+          <div class="news-featured__meta">
+            <span class="badge badge-purple">Artificial Intelligence</span>
+            <span class="badge badge-gray">⏱ 6 min read</span>
           </div>
-          <div class="news-card__title">How AI is Changing Everyday Life in 2025</div>
-          <p class="news-card__excerpt">From smart assistants to AI-written emails — artificial intelligence has moved from sci-fi to your daily routine. Here's what's actually happening.</p>
-          <div class="news-card__footer">
-            <span>📅 June 2025 &nbsp;·&nbsp; ⏱ 6 min read</span>
-            <span style="color:var(--primary);font-weight:600;">Read →</span>
-          </div>
-        </div>
-      </a>
-
-      <a href="best-smartphones-2025.html" class="news-card" data-category="smartphones">
-        <div class="news-card__thumb" style="background:#ffedd5;">📱</div>
-        <div class="news-card__body">
-          <div class="news-card__meta">
-            <span class="badge badge-orange">Smartphones</span>
-          </div>
-          <div class="news-card__title">Best Smartphones to Buy in 2025</div>
-          <p class="news-card__excerpt">iPhone, Samsung, Google Pixel — which phone is actually worth your money? We break down the top picks across every budget.</p>
-          <div class="news-card__footer">
-            <span>📅 June 2025 &nbsp;·&nbsp; ⏱ 7 min read</span>
-            <span style="color:var(--primary);font-weight:600;">Read →</span>
+          <div class="news-featured__title">How AI is Changing Everyday Life in 2025</div>
+          <p class="news-featured__excerpt">From ChatGPT to Microsoft Copilot — artificial intelligence has moved from science fiction into your phone, your inbox, and your office. Here's what's actually happening, and what it means for you.</p>
+          <div class="news-featured__footer">
+            <span class="news-featured__time">📅 June 2025</span>
+            <span class="news-read-btn">Read Article →</span>
           </div>
         </div>
       </a>
-
-      <a href="social-media-changes-2025.html" class="news-card" data-category="social">
-        <div class="news-card__thumb" style="background:#fce7f3;">💬</div>
-        <div class="news-card__body">
-          <div class="news-card__meta">
-            <span class="badge badge-pink">Social Media</span>
-          </div>
-          <div class="news-card__title">The Biggest Social Media Changes of 2025</div>
-          <p class="news-card__excerpt">TikTok bans, Threads growth, AI bots everywhere — social media has never changed this fast. Here's what's new and what it means for you.</p>
-          <div class="news-card__footer">
-            <span>📅 June 2025 &nbsp;·&nbsp; ⏱ 6 min read</span>
-            <span style="color:var(--primary);font-weight:600;">Read →</span>
-          </div>
-        </div>
-      </a>
-
-      <a href="cybersecurity-tips-everyone.html" class="news-card" data-category="security">
-        <div class="news-card__thumb" style="background:#fee2e2;">🔒</div>
-        <div class="news-card__body">
-          <div class="news-card__meta">
-            <span class="badge badge-red">Cybersecurity</span>
-          </div>
-          <div class="news-card__title">10 Cybersecurity Tips Everyone Should Know</div>
-          <p class="news-card__excerpt">Hackers are getting smarter every year. These ten simple habits will protect your accounts, devices, and personal data — no technical skills needed.</p>
-          <div class="news-card__footer">
-            <span>📅 June 2025 &nbsp;·&nbsp; ⏱ 7 min read</span>
-            <span style="color:var(--primary);font-weight:600;">Read →</span>
-          </div>
-        </div>
-      </a>
-
-      <a href="best-free-apps-2025.html" class="news-card" data-category="apps">
-        <div class="news-card__thumb" style="background:#d1fae5;">⚡</div>
-        <div class="news-card__body">
-          <div class="news-card__meta">
-            <span class="badge badge-green">Apps</span>
-          </div>
-          <div class="news-card__title">The Best Free Apps You Should Download Right Now</div>
-          <p class="news-card__excerpt">From productivity to finance to creative tools — these free apps are genuinely useful and trusted by millions of people around the world.</p>
-          <div class="news-card__footer">
-            <span>📅 June 2025 &nbsp;·&nbsp; ⏱ 6 min read</span>
-            <span style="color:var(--primary);font-weight:600;">Read →</span>
-          </div>
-        </div>
-      </a>
-
-      <a href="tech-trends-2025.html" class="news-card" data-category="trends">
-        <div class="news-card__thumb" style="background:#ccfbf1;">🌐</div>
-        <div class="news-card__body">
-          <div class="news-card__meta">
-            <span class="badge badge-teal">Tech Trends</span>
-          </div>
-          <div class="news-card__title">The Tech Trends Shaping Our World in 2025</div>
-          <p class="news-card__excerpt">Foldable phones, AR glasses, smart homes, 5G expansion — technology is moving at breathtaking speed. Here are the trends that actually matter.</p>
-          <div class="news-card__footer">
-            <span>📅 June 2025 &nbsp;·&nbsp; ⏱ 7 min read</span>
-            <span style="color:var(--primary);font-weight:600;">Read →</span>
-          </div>
-        </div>
-      </a>
-
     </div>
+
+    <!-- MORE STORIES GRID -->
+    <div id="grid-wrap">
+      <div class="news-section-label">More Stories</div>
+      <div class="news-grid" id="news-grid">
+
+        <a href="best-smartphones-2025.html" class="news-card" data-category="smartphones">
+          <div class="news-card__thumb" style="background:linear-gradient(135deg,#ffedd5,#fed7aa);">📱</div>
+          <div class="news-card__body">
+            <div class="news-card__meta">
+              <span class="badge badge-orange">Smartphones</span>
+            </div>
+            <div class="news-card__title">Best Smartphones to Buy in 2025</div>
+            <p class="news-card__excerpt">iPhone 16, Galaxy S25, Google Pixel 9 — which phone is actually worth your money? We break down top picks at every budget.</p>
+            <div class="news-card__footer">
+              <span>📅 June 2025 · ⏱ 7 min</span>
+              <span class="news-card__cta">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="social-media-changes-2025.html" class="news-card" data-category="social">
+          <div class="news-card__thumb" style="background:linear-gradient(135deg,#fce7f3,#fbcfe8);">💬</div>
+          <div class="news-card__body">
+            <div class="news-card__meta">
+              <span class="badge badge-pink">Social Media</span>
+            </div>
+            <div class="news-card__title">The Biggest Social Media Changes of 2025</div>
+            <p class="news-card__excerpt">TikTok bans, Threads growing fast, AI bots flooding feeds — social media has never changed this quickly.</p>
+            <div class="news-card__footer">
+              <span>📅 June 2025 · ⏱ 6 min</span>
+              <span class="news-card__cta">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="cybersecurity-tips-everyone.html" class="news-card" data-category="security">
+          <div class="news-card__thumb" style="background:linear-gradient(135deg,#fee2e2,#fecaca);">🔒</div>
+          <div class="news-card__body">
+            <div class="news-card__meta">
+              <span class="badge badge-red">Cybersecurity</span>
+            </div>
+            <div class="news-card__title">10 Cybersecurity Tips Everyone Should Know</div>
+            <p class="news-card__excerpt">Simple habits that protect your accounts, devices, and personal data — no technical skills needed.</p>
+            <div class="news-card__footer">
+              <span>📅 June 2025 · ⏱ 7 min</span>
+              <span class="news-card__cta">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="best-free-apps-2025.html" class="news-card" data-category="apps">
+          <div class="news-card__thumb" style="background:linear-gradient(135deg,#d1fae5,#a7f3d0);">⚡</div>
+          <div class="news-card__body">
+            <div class="news-card__meta">
+              <span class="badge badge-green">Apps</span>
+            </div>
+            <div class="news-card__title">The Best Free Apps You Should Download Right Now</div>
+            <p class="news-card__excerpt">Notion, Duolingo, Bitwarden, Canva — genuinely useful free apps trusted by millions worldwide.</p>
+            <div class="news-card__footer">
+              <span>📅 June 2025 · ⏱ 6 min</span>
+              <span class="news-card__cta">Read →</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="tech-trends-2025.html" class="news-card" data-category="trends">
+          <div class="news-card__thumb" style="background:linear-gradient(135deg,#ccfbf1,#99f6e4);">🌐</div>
+          <div class="news-card__body">
+            <div class="news-card__meta">
+              <span class="badge badge-teal">Tech Trends</span>
+            </div>
+            <div class="news-card__title">The Tech Trends Shaping Our World in 2025</div>
+            <p class="news-card__excerpt">Foldable phones, AR glasses, smart homes, 5G expansion — the trends that actually matter this year.</p>
+            <div class="news-card__footer">
+              <span>📅 June 2025 · ⏱ 7 min</span>
+              <span class="news-card__cta">Read →</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+
   </div>
 </main>
 
@@ -256,14 +265,25 @@
 <button id="back-to-top" aria-label="Back to top">↑</button>
 <script src="../js/main.js"></script>
 <script>
-  // Filter buttons
   const filterBtns = document.querySelectorAll('.news-filter-btn');
+  const featuredWrap = document.getElementById('featured-wrap');
+  const featured = document.querySelector('.news-featured');
   const cards = document.querySelectorAll('.news-card');
+
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       const filter = btn.dataset.filter;
+
+      // Show/hide featured based on filter
+      if (filter === 'all' || filter === 'ai') {
+        featuredWrap.style.display = '';
+      } else {
+        featuredWrap.style.display = 'none';
+      }
+
+      // Show/hide grid cards
       cards.forEach(card => {
         card.style.display = (filter === 'all' || card.dataset.category === filter) ? '' : 'none';
       });
