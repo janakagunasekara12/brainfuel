@@ -45,7 +45,7 @@
   --font-body:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-heading: 'Poppins', var(--font-body);
 
-  --nav-h:    96px;
+  --nav-h:    64px;
   --container: 1200px;
   --content:   800px;
 
@@ -1235,7 +1235,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
-  :root { --nav-h: 88px; }
+  :root { --nav-h: 56px; }
   .nav__links { display: none; }
   .search-box  { display: none; }
   .hamburger   { display: flex; }
